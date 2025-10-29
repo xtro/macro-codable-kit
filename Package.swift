@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import CompilerPluginSupport
@@ -19,14 +19,14 @@ let package = Package(
     dependencies: [
         // Read Swift code
         .package(
-            url: "https://github.com/apple/swift-syntax.git",
-            from: "509.0.0"
+            url: "https://github.com/swiftlang/swift-syntax.git",
+            from: "510.0.0"
         ),
 
         // Format Swift code
         .package(
-            url: "https://github.com/apple/swift-format.git",
-            from: "509.0.0"
+            url: "https://github.com/swiftlang/swift-format.git",
+            from: "510.0.0"
         ),
 
         // Tools for macro development
