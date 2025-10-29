@@ -22,7 +22,7 @@ extension OneOfMacroBase {
                 throw CommonError.diagnosticError
             }
 
-            let accessModifier: AccessModifier? = enumDecl.isPublic ? .public : nil
+            let accessModifier: AccessModifier? = enumDecl.accessLevel == .public ? .public : nil
             let codingKeysBuildingData = try CodingKeysBuilder.verify(
                 accessModifier: accessModifier,
                 enumDecl: enumDecl
